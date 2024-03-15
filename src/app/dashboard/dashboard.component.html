@@ -1,0 +1,209 @@
+<div class="card m-2 cardstyle">
+  <div class="row">
+    <div class="col-sm-6">
+      <p class="paddingStyle">DORA Metrics KPI</p>
+    </div>
+    <div class="col-sm-6 align-items-end">
+      <div>Data of </div>
+      <select class="form-select paddingStyle">
+        <option selected onchange="updateRange()">Till date</option>
+        <option>last one day</option>
+        <option>last one week</option>
+        <option>last fifteen days</option>
+        <option>last month</option>
+        <option>last year</option>
+      </select>
+    </div>
+  </div>
+</div>
+<div class="mainScroll">
+  <div class="row">
+    <!-- <div class="col-sm-4">
+      <div class="card m-2 cardstyle">
+        <div class="card-body noPad">
+          <div class="card-text metricNumber positiveIncrease">
+            <span>~12 </span><span class="subTextSmall">Minutes</span>
+          </div>
+          <div class="cardBottom">
+            <div>
+              Average lead time for delivering a change to production
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="col-sm-6">
+      <div class="card m-2 cardstyle">
+        <div class="card-body noPad">
+          <div class="card-text metricNumber negativeNumber">
+            <span>{{mttr}} </span><span class="subTextSmall">Minutes</span>
+          </div>
+          <div class="cardBottom">
+            <div>
+              Incident | Mean Time To Recovery (MTTR)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card m-2 cardstyle">
+        <div class="card-body noPad">
+          <div class="card-text metricNumber positiveIncrease">
+            <span>{{otat}} </span><span class="subTextSmall">Minutes</span>
+          </div>
+          <div class="cardBottom">
+            <div>
+              Incident | OTAT
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-7">
+      <div class="card m-2 cardstyle">
+        <div class="card-body noPad">
+          <div class="card-text metricNumber">
+            <canvas id="weeklyUpdate" width="400" height="400">{{linechart}}</canvas>
+          </div>
+          <div class="cardBottom">
+            <div>
+              Weekly Deployment By Team
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-5">
+      <div class="card m-2 cardstyle">
+        <div class="card-body noPad">
+          <div class="card-text metricNumber">
+            <canvas id="typeOfdeployment" width="400" height="400">{{chart}}</canvas>
+          </div>
+          <div class="cardBottom">
+            <div>
+              Type of Deployments(On, Off, HSP)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="card m-2 cardstyle">
+        <div class="card-body noPad">
+          <div class="card-text metricNumber">
+            <canvas id="typeOfChange" width="400" height="400">{{changeChart}}</canvas>
+          </div>
+          <div class="cardBottom">
+            <div>
+              Type of Changes(Distributed, HOST, DB, Manual)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card m-2 cardstyle">
+        <div class="card-body noPad">
+          <div class="card-text metricNumber">
+            <canvas id="buildCount" width="400" height="400">{{buildCountChart}}</canvas>
+          </div>
+          <div class="cardBottom">
+            <div>
+              No of Build Happening Across Environment
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="card m-2 cardstyle">
+        <div class="card-body noPad">
+          <div class="card-text metricNumber">
+            <canvas id="releaseChart" width="400" height="400">{{releaseChart}}</canvas>
+          </div>
+          <div class="cardBottom">
+            <div>
+              Number of Releases
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-sm-5">
+      <div class="card m-2 cardstyle">
+        <div class="card-body noPad">
+          <div class="card-text metricNumber">
+            <canvas id="deploymentCycle" width="400" height="400">{{deploymentCycleChart}}</canvas>
+          </div>
+          <div class="cardBottom">
+            <div>
+              Deployment Cycle by Team
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+  <div class="table-responsive card m-2">
+      <table class="table table-bordered caption-top p-2">
+        <caption>Average lead Time(Top 10)</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">LOB</th>
+            <th scope="col">Environment</th>
+            <th scope="col">Deployment Tool</th>
+            <th scope="col">Template Used?</th>
+            <th scope="col">Lead Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of getHighLeadTime;let  i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{item[2]}}</td>
+            <td>{{item[3]}}</td>
+            <td>{{item[4]}}</td>
+            <td>{{item[12]}}</td>
+            <td>{{item[24]}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+  <div class="table-responsive card m-2">
+    <table class="table table-bordered caption-top p-2">
+      <caption>Average lead Time(least 10)</caption>
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">LOB</th>
+          <th scope="col">Environment</th>
+          <th scope="col">Deployment Tool</th>
+          <th scope="col">Template Used?</th>
+          <th scope="col">Lead Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of getLowLeadTime;let  i = index">
+          <th scope="row">{{i+1}}</th>
+          <td>{{item[2]}}</td>
+          <td>{{item[3]}}</td>
+          <td>{{item[4]}}</td>
+          <td>{{item[12]}}</td>
+          <td>{{item[24]}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+</div>
+<!-- <div class="footer">
+  <div style="padding: 15px 10px;"> designed by Ashish_Mishra</div>
+</div> -->

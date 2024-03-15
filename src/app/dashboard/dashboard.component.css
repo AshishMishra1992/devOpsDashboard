@@ -1,0 +1,45 @@
+.cardstyle {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.paddingStyle {
+    margin: 0;
+    padding: 10px;
+}
+
+.mainScroll {
+    overflow-x: hidden;
+    overflow: scroll;
+    height: calc(100vh - 61px);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.noPad {
+    padding: 0px;
+}
+
+.cardBottom {
+    padding: 10px;
+    border-top: 2px solid #d3d3d366;
+    font-size: 12px;
+}
+
+.metricNumber {
+    font-size: 45px;
+    text-align: center;
+}
+
+.subTextSmall {
+    font-size: 20px;
+}
+
+.positiveIncrease {
+    background: aquamarine;
+}
+
+.negativeNumber {
+    background: coral;
+}

@@ -1,0 +1,50 @@
+﻿notify_nbr,notify_category,notify_category_nbr,notify_description,notify_application_id,notify_lob,notify_environment,notify_severity,notify_reported_team,notify_assigned_team,notify_status,notify_impact,notify_date,notify_date_ts
+1010,incident,100001,Application not loading,,personal_insurance,production,critical,SVS,JVS,closed,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:40
+1011,incident,100010,Application not loading,,business_insurance,production,critical,JVS,SVS,closed,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:55
+1012,incident,100030,Application not loading,,personal_insurance,production,critical,SVS,JVS,closed,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:40
+1013,incident,100031,Application not loading,,business_insurance,production,critical,JVS,SVS,closed,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:55
+1014,incident,100054,Application not loading,,business_insurance,production,high,JVS,SVS,inprogress,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:55
+1015,incident,100055,Application not loading,,business_insurance,production,high,JVS,SVS,open,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:55
+1016,incident,100056,Application not loading,,business_insurance,production,high,JVS,SVS,open,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:55
+1017,incident,100057,Application not loading,,business_insurance,production,medium,JVS,SVS,pending,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:55
+1018,incident,100058,Application not loading,,business_insurance,production,low,JVS,SVS,pending,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:55
+1019,incident,100059,Application not loading,,business_insurance,production,low,JVS,SVS,inprogress,Critical. Users Customers impacted.,11/14/2023,11/14/2023 12:55
+1020,deployment,10100011,Deployment failed,11,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1021,deployment,10100012,Deployment failed,12,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1022,deployment,10100013,Deployment failed,13,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1023,deployment,10100014,Deployment failed,14,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1024,deployment,10100015,Deployment failed,15,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1025,deployment,10100072,Deployment failed,72,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1026,deployment,10100073,Deployment failed,73,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1027,deployment,10100074,Deployment failed,74,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1028,deployment,10100075,Deployment failed,75,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1029,deployment,10100131,Deployment failed,131,claims,production,,,,failed,Critical. Delivery impact.,2/5/2024,2/5/2024 12:55
+1030,deployment,10100132,Deployment failed,132,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1031,deployment,10100133,Deployment failed,133,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1032,deployment,10100134,Deployment failed,134,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1033,deployment,10100135,Deployment failed,135,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1034,deployment,10100191,Deployment failed,191,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1035,deployment,10100192,Deployment failed,192,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1036,deployment,10100193,Deployment failed,193,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1037,deployment,10100194,Deployment failed,194,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1038,deployment,10100195,Deployment failed,195,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1039,deployment,10100251,Deployment failed,251,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1040,deployment,10100252,Deployment failed,252,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1041,deployment,10100253,Deployment failed,253,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1042,deployment,10100254,Deployment failed,254,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1043,deployment,10100255,Deployment failed,255,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1044,deployment,10100311,Deployment failed,311,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1045,deployment,10100312,Deployment failed,312,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1046,deployment,10100313,Deployment failed,313,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1047,deployment,10100314,Deployment failed,314,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1048,deployment,10100315,Deployment failed,315,claims,production,,,,failed,Critical. Delivery impact.,2/6/2024,2/6/2024 12:55
+1049,deployment,10100371,Deployment failed,371,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55
+1050,deployment,10100372,Deployment failed,372,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55
+1051,deployment,10100373,Deployment failed,373,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55
+1052,deployment,10100374,Deployment failed,374,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55
+1053,deployment,10100375,Deployment failed,375,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55
+1054,deployment,10100431,Deployment failed,431,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55
+1055,deployment,10100432,Deployment failed,432,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55
+1056,deployment,10100433,Deployment failed,433,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55
+1057,deployment,10100434,Deployment failed,434,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55
+1058,deployment,10100435,Deployment failed,435,claims,production,,,,failed,Critical. Delivery impact.,2/7/2024,2/7/2024 12:55

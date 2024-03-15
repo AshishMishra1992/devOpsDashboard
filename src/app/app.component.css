@@ -1,0 +1,13 @@
+.sideBarScroll {
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-link {
+    color: white;
+    font-size: 12px;
+}

@@ -1,0 +1,21 @@
+app_id,app_name,app_short_description,app_type,app_team_DL ,ucd_comp_name ,circle_name ,app_lead ,cloud_platform,cloud_type,scm_type,scm_url ,is_code_quality_enabled ,is_integration_test_enabled ,integration_test_tool,is_black_duck_enabled ,ucd_app_name ,is_prod_enabled,target_infrastructure
+1,pi_emp_portal,na,personal_insurance,na,na,na,abc,aws,public,github,na,no,yes,na,yes,na,yes,aws
+2,pi_dev_tools,na,personal_insurance,na,na,na,def,aws,public,github,na,yes,yes,na,yes,na,yes,aws
+3,pi_fin_calculator,na,personal_insurance,na,na,na,ghi,aws,public,github,na,yes,yes,na,yes,na,yes,aws
+4,pi_power_builder,na,personal_insurance,na,na,na,jkl,aws,public,github,na,no,yes,na,yes,na,yes,aws
+5,pi_customer_analysis,na,personal_insurance,na,na,na,mno,azure,public,github,na,yes,yes,na,yes,na,yes,azure
+6,bi_emp_portal,na,business_insurance,na,na,na,pqr,azure,public,github,na,no,yes,na,yes,na,yes,azure
+7,bi_dev_tools,na,business_insurance,na,na,na,stu,azure,private,github,na,yes,yes,na,yes,na,yes,azure
+8,bi_fin_calculator,na,business_insurance,na,na,na,vwx,azure,private,github,na,yes,yes,na,yes,na,yes,azure
+9,bi_power_builder,na,business_insurance,na,na,na,yz,azure,private,github,na,no,yes,na,yes,na,yes,azure
+10,bi_customer_analysis,na,business_insurance,na,na,na,abc,azure,public,github,na,yes,yes,na,yes,na,yes,azure
+11,ci_emp_portal,na,claims,na,na,na,def,aws,public,github,na,no,yes,na,yes,na,yes,aws
+12,ci_dev_tools,na,claims,na,na,na,ghi,aws,public,github,na,yes,yes,na,yes,na,yes,aws
+13,ci_fin_calculator,na,claims,na,na,na,jkl,aws,public,github,na,yes,yes,na,yes,na,yes,aws
+14,ci_power_builder,na,claims,na,na,na,mno,aws,public,github,na,no,yes,na,yes,na,yes,aws
+15,ci_customer_analysis,na,claims,na,na,na,pqr,aws,public,github,na,yes,yes,na,yes,na,yes,aws
+16,hi_emp_portal,na,bond,na,na,na,stu,gcp,private,svn,na,no,yes,na,no,na,yes,gcp
+17,hi_dev_tools,na,bond,na,na,na,vwx,gcp,private,svn,na,yes,yes,na,no,na,yes,gcp
+18,hi_fin_calculator,na,bond,na,na,na,yz,gcp,private,svn,na,yes,yes,na,no,na,yes,gcp
+19,hi_power_builder,na,bond,na,na,na,abc,gcp,private,svn,na,no,yes,na,no,na,yes,gcp
+20,hi_customer_analysis,na,bond,na,na,na,def,gcp,private,svn,na,yes,yes,na,no,na,yes,gcp
