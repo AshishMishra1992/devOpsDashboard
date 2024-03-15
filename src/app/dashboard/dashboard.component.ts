@@ -228,9 +228,9 @@ export class DashboardComponent implements OnInit {
   }
 
   //done
-  getTypeOfChanges() {
+  async getTypeOfChanges() {
     let tempData = [0, 0, 0, 0]
-    this.changeData.forEach((element: string[]) => {
+    await this.changeData.forEach((element: string[]) => {
       if (element[14] == "distributed") {
         tempData[0] = tempData[0] + 1
       } else if (element[14] == "host") {
@@ -301,8 +301,8 @@ export class DashboardComponent implements OnInit {
     });
   }
 
-  DeploymentCycle() {
-    this.deploymentCycleChart = new Chart("deploymentCycle", {
+  async DeploymentCycle() {
+     this.deploymentCycleChart = new Chart("deploymentCycle", {
       type: 'bar',
       data: {
         labels: ['UAT', 'DEV', 'PROD'],
