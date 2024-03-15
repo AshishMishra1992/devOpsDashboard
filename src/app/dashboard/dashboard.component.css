@@ -43,3 +43,8 @@
 .negativeNumber {
     background: coral;
 }
+
+.clickHover:hover{
+    cursor: pointer;
+    border: 1px solid grey;
+}

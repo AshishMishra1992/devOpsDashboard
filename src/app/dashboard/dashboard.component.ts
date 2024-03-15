@@ -87,6 +87,7 @@ export class DashboardComponent implements OnInit {
     this.getHighLeadTime = []
     this.getLowLeadTime = []
     this.deploymentData.splice(0, 1);
+    console.log('deploymentList '+this.deploymentData)
     await this.deploymentData.forEach((element: any, index: any) => {
       if (typeof (element[22]) == 'number') {
         this.deploymentData.splice(index, 1);
