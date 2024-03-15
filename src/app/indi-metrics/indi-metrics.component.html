@@ -1,0 +1,81 @@
+<div class="card m-2 cardstyle">
+    <div class="row">
+      <div class="col-sm-12">
+        <p class="paddingStyle">Deployment Metrics</p>
+      </div>
+      <!-- <div class="col-sm-6 align-items-end">
+        <div>Data of </div>
+        <select class="form-select paddingStyle">
+          <option selected onchange="updateRange()">Till date</option>
+          <option>last one day</option>
+          <option>last one week</option>
+          <option>last fifteen days</option>
+          <option>last month</option>
+          <option>last year</option>
+        </select>
+      </div> -->
+    </div>
+  </div>
+  <div class="mainScroll">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card m-2 cardstyle">
+              <div class="card-body noPad clickHover">
+                <div class="card-text metricNumber">
+                  <canvas id="buildCountpersonal" width="400" height="400">{{buildCountChartpersonal}}</canvas>
+                </div>
+                <div class="cardBottom">
+                  <div>
+                    No of Build Happening Across Environment
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card m-2 cardstyle">
+              <div class="card-body noPad clickHover">
+                <div class="card-text metricNumber">
+                  <canvas id="buildCountClaim" width="400" height="400">{{buildCountChartClaim}}</canvas>
+                </div>
+                <div class="cardBottom">
+                  <div>
+                    No of Build Happening Across Environment
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card m-2 cardstyle">
+              <div class="card-body noPad clickHover">
+                <div class="card-text metricNumber">
+                  <canvas id="buildCountbusiness" width="400" height="400">{{buildCountChartBusiness}}</canvas>
+                </div>
+                <div class="cardBottom">
+                  <div>
+                    No of Build Happening Across Environment
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card m-2 cardstyle">
+              <div class="card-body noPad clickHover">
+                <div class="card-text metricNumber">
+                  <canvas id="buildCountBond" width="400" height="400">{{buildCountChartBond}}</canvas>
+                </div>
+                <div class="cardBottom">
+                  <div>
+                    No of Build Happening Across Environment
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>    
+    </div>  
+  </div>
+  <!-- <div class="footer">
+    <div style="padding: 15px 10px;">DevOps Dashboard</div>
+  </div> -->

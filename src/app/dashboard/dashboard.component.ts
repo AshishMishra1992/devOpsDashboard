@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { RouterOutlet, RouterLink, RouterLinkActive, Router } from '@angular/router';
 // import { Chart } from 'chart.js';
 import Chart from 'chart.js/auto';
 import readXlsxFile from 'read-excel-file'
@@ -7,7 +8,7 @@ import readXlsxFile from 'read-excel-file'
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterOutlet, RouterLink, RouterLinkActive],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
@@ -27,6 +28,8 @@ export class DashboardComponent implements OnInit {
   otat: any;
   getHighLeadTime: any = [];
   getLowLeadTime: any = [];
+
+  constructor( private router: Router  ) {}
 
   async ngOnInit() {
     await fetch('../../assets/data/deployments.xlsx')
@@ -64,6 +67,9 @@ export class DashboardComponent implements OnInit {
 
   }
 
+  navigate(){
+    this.router.navigate(['metrics'])
+  }
   async getMttrOtat() {
     this.mttr = 0;
     this.otat = 0;

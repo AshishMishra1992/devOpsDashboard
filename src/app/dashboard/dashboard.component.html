@@ -34,7 +34,7 @@
     </div> -->
     <div class="col-sm-6 ">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover">
+        <div class="card-body noPad clickHover" (click)="navigate()">
           <div class="card-text metricNumber negativeNumber">
             <span>{{mttr}} </span><span class="subTextSmall">Minutes</span>
           </div>
@@ -48,7 +48,7 @@
     </div>
     <div class="col-sm-6">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover">
+        <div class="card-body noPad clickHover" (click)="navigate()">
           <div class="card-text metricNumber positiveIncrease">
             <span>{{otat}} </span><span class="subTextSmall">Minutes</span>
           </div>
@@ -64,7 +64,7 @@
   <div class="row">
     <div class="col-sm-7">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover">
+        <div class="card-body noPad clickHover" (click)="navigate()">
           <div class="card-text metricNumber">
             <canvas id="weeklyUpdate" width="400" height="400">{{linechart}}</canvas>
           </div>
@@ -78,7 +78,7 @@
     </div>
     <div class="col-sm-5">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover">
+        <div class="card-body noPad clickHover" (click)="navigate()">
           <div class="card-text metricNumber">
             <canvas id="typeOfdeployment" width="400" height="400">{{chart}}</canvas>
           </div>
@@ -94,7 +94,7 @@
   <div class="row">
     <div class="col-sm-6">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover">
+        <div class="card-body noPad clickHover" (click)="navigate()">
           <div class="card-text metricNumber">
             <canvas id="typeOfChange" width="400" height="400">{{changeChart}}</canvas>
           </div>
@@ -108,7 +108,7 @@
     </div>
     <div class="col-sm-6">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover">
+        <div class="card-body noPad clickHover" (click)="navigate()">
           <div class="card-text metricNumber">
             <canvas id="buildCount" width="400" height="400">{{buildCountChart}}</canvas>
           </div>
@@ -124,7 +124,7 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover">
+        <div class="card-body noPad clickHover" (click)="navigate()">
           <div class="card-text metricNumber">
             <canvas id="releaseChart" width="400" height="400">{{releaseChart}}</canvas>
           </div>
@@ -151,7 +151,7 @@
       </div>
     </div> -->
   </div>
-  <div class="table-responsive card m-2 clickHover">
+  <div class="table-responsive card m-2 clickHover" (click)="navigate()">
       <table class="table table-bordered caption-top p-2">
         <caption>Average lead Time(Top 10)</caption>
         <thead>
@@ -177,7 +177,7 @@
       </table>
   </div>
 
-  <div class="table-responsive card m-2 clickHover">
+  <div class="table-responsive card m-2 clickHover" (click)="navigate()">
     <table class="table table-bordered caption-top p-2">
       <caption>Average lead Time(least 10)</caption>
       <thead>
