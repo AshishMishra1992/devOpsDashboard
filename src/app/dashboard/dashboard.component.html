@@ -1,7 +1,7 @@
 <div class="card m-2 cardstyle">
   <div class="row">
     <div class="col-sm-6">
-      <p class="paddingStyle">DORA Metrics KPI</p>
+      <p class="paddingStyle">Command Center</p>
     </div>
     <div class="col-sm-6 align-items-end">
       <div>Data of </div>
@@ -34,7 +34,7 @@
     </div> -->
     <div class="col-sm-6 ">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover" (click)="navigate()">
+        <div class="card-body noPad clickHover">
           <div class="card-text metricNumber negativeNumber">
             <span>{{mttr}} </span><span class="subTextSmall">Minutes</span>
           </div>
@@ -48,7 +48,7 @@
     </div>
     <div class="col-sm-6">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover" (click)="navigate()">
+        <div class="card-body noPad clickHover">
           <div class="card-text metricNumber positiveIncrease">
             <span>{{otat}} </span><span class="subTextSmall">Minutes</span>
           </div>
@@ -64,13 +64,13 @@
   <div class="row">
     <div class="col-sm-7">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover" (click)="navigate()">
+        <div class="card-body noPad clickHover">
           <div class="card-text metricNumber">
             <canvas id="weeklyUpdate" width="400" height="400">{{linechart}}</canvas>
           </div>
           <div class="cardBottom">
             <div>
-              Weekly Deployment By Team
+               Monthly Deployment By LOB
             </div>
           </div>
         </div>
@@ -78,7 +78,7 @@
     </div>
     <div class="col-sm-5">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover" (click)="navigate()">
+        <div class="card-body noPad clickHover">
           <div class="card-text metricNumber">
             <canvas id="typeOfdeployment" width="400" height="400">{{chart}}</canvas>
           </div>
@@ -94,7 +94,7 @@
   <div class="row">
     <div class="col-sm-6">
       <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover" (click)="navigate()">
+        <div class="card-body noPad clickHover">
           <div class="card-text metricNumber">
             <canvas id="typeOfChange" width="400" height="400">{{changeChart}}</canvas>
           </div>
@@ -114,44 +114,14 @@
           </div>
           <div class="cardBottom">
             <div>
-              No of Build Happening Across Environment
+              No of Build Happening Across LOB
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="card m-2 cardstyle">
-        <div class="card-body noPad clickHover" (click)="navigate()">
-          <div class="card-text metricNumber">
-            <canvas id="releaseChart" width="400" height="400">{{releaseChart}}</canvas>
-          </div>
-          <div class="cardBottom">
-            <div>
-              Number of Releases
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- <div class="col-sm-5">
-      <div class="card m-2 cardstyle">
-        <div class="card-body noPad">
-          <div class="card-text metricNumber">
-            <canvas id="deploymentCycle" width="400" height="400">{{deploymentCycleChart}}</canvas>
-          </div>
-          <div class="cardBottom">
-            <div>
-              Deployment Cycle by Team
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-  </div>
-  <div class="table-responsive card m-2 clickHover" (click)="navigate()">
+  <div class="table-responsive card m-2 clickHover">
       <table class="table table-bordered caption-top p-2">
         <caption>Average lead Time(Top 10)</caption>
         <thead>
@@ -177,7 +147,7 @@
       </table>
   </div>
 
-  <div class="table-responsive card m-2 clickHover" (click)="navigate()">
+  <div class="table-responsive card m-2 clickHover">
     <table class="table table-bordered caption-top p-2">
       <caption>Average lead Time(least 10)</caption>
       <thead>

@@ -93,7 +93,6 @@ export class DashboardComponent implements OnInit {
     this.getHighLeadTime = []
     this.getLowLeadTime = []
     this.deploymentData.splice(0, 1);
-    console.log('deploymentList '+this.deploymentData)
     await this.deploymentData.forEach((element: any, index: any) => {
       if (typeof (element[22]) == 'number') {
         this.deploymentData.splice(index, 1);
@@ -108,8 +107,6 @@ export class DashboardComponent implements OnInit {
     for (let i = 1; i < 11; i++) {
       this.getLowLeadTime.push(this.deploymentData[this.deploymentData.length - i])
     }
-    console.log("sasd " + this.getHighLeadTime)
-    console.log("saasdasdassd " + this.getLowLeadTime)
   }
 
   async getDeploymentChart() {
@@ -123,8 +120,6 @@ export class DashboardComponent implements OnInit {
         tempData[2] = tempData[2] + 1
       }
     });
-    console.log(tempData)
-
     this.chart = new Chart('typeOfdeployment', {
       type: 'pie',
       data: {
@@ -155,36 +150,44 @@ export class DashboardComponent implements OnInit {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         datasets: [
           {
-            label: "M&O",
-            data: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60],
+            label: "BI",
+            data: [200, 105, 159, 202, 259, 300, 350, 400, 451, 350, 455, 260],
             borderColor: 'rgb(255, 99, 132)',
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderWidth: 2,
             pointBackgroundColor: 'rgb(255, 99, 132)',
           },
           {
-            label: "PVS",
-            data: [10, 20, 30, 40, 50, 60, 20, 15, 10, 5, 8],
+            label: "PI",
+            data: [310, 420, 230, 440, 350, 260, 320, 415, 110, 35, 58],
             borderColor: 'rgb(99, 111 ,255)',
             backgroundColor: 'rgba(99, 111, 255, 0.2)',
             borderWidth: 2,
             pointBackgroundColor: 'rgb(99, 111, 255)',
           },
           {
-            label: "SVS",
-            data: [14, 25, 56, 76, 85, 23, 87, 13, 12, 90, 100, 124],
+            label: "Claims",
+            data: [140, 250, 536, 376, 285, 123, 287, 313, 212, 390, 190, 184],
             borderColor: 'rgb(53, 169, 96)',
             backgroundColor: 'rgba(53, 169, 96, 0.2)',
             borderWidth: 2,
             pointBackgroundColor: 'rgb(53, 169, 96)',
           },
           {
-            label: "JVS",
-            data: [45, 21, 54, 87, 64, 23, 89, 56, 12, 44, 90, 98],
+            label: "Canada",
+            data: [450, 210, 554, 287, 364, 223, 389, 356, 412, 344, 290, 498],
             borderColor: 'rgb(206, 74, 43)',
             backgroundColor: 'rgba(206, 74, 43, 0.2)',
             borderWidth: 2,
             pointBackgroundColor: 'rgb(206, 74, 43)',
+          },
+          {
+            label: "Bond",
+            data: [425, 321, 454, 387, 564, 223, 489, 256, 112, 344, 290, 298],
+            borderColor: 'rgb(206, 74, 43)',
+            backgroundColor: 'rgba(43 200 206  0.89)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgb(43, 200, 206)',
           }
         ]
       },
